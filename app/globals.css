@@ -12,15 +12,39 @@
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "gotham", sans-serif;
+}
+
+/* Estilos para o efeito de scramble */
+.shuffle {
+  font-size: 1.25em;
+  color: #272833;
+  font-weight: 200;
+  /* letter-spacing: -0.025em; */
+  line-height: 1.5em;
+}
+
+.dud {
+  color: #757575;
+}
+
+/* Estilos para o preload */
+body.is-preload {
+  overflow: hidden;
+}
+
+body.is-preload * {
+  animation-duration: 0s !important;
+  animation-delay: 0s !important;
+  transition-duration: 0s !important;
+  transition-delay: 0s !important;
+}
+
+@media (max-width: 768px) {
+  .shuffle {
+    font-size: 1em;
+  }
 }
