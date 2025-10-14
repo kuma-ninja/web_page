@@ -49,7 +49,7 @@ export default function Home() {
           </header>
           <span className={styles.image}>
             <Image
-              src="/LOGO KUMANINJA_fundo_branco.png"
+              src="/LOGO_KUMANINJA_fundo_branco.png"
               alt="Kuma Ninja Logo"
               width={500}
               height={500}
